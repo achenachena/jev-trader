@@ -1,0 +1,145 @@
+{
+  "model": "typesafe-ai/jev",
+  "cases": [
+    {
+      "id": "P01",
+      "prediction": "INSUFFICIENT",
+      "provisional_label": "INSUFFICIENT",
+      "probabilities": {
+        "INSUFFICIENT": 0.96,
+        "SUFFICIENT_NO": 0.04,
+        "AMBIGUOUS": 0,
+        "SUFFICIENT_YES": 0
+      },
+      "elapsed_seconds": 0.5424168340396136,
+      "request_sha256": "ab0373ecb0e6d9c9cf0a49aac999d80b27979a9d7b0960473abda8e0580a13e2"
+    },
+    {
+      "id": "P02",
+      "prediction": "SUFFICIENT_NO",
+      "provisional_label": "INSUFFICIENT",
+      "probabilities": {
+        "SUFFICIENT_YES": 0,
+        "AMBIGUOUS": 0,
+        "INSUFFICIENT": 0.12,
+        "SUFFICIENT_NO": 0.88
+      },
+      "elapsed_seconds": 0.5717487080255523,
+      "request_sha256": "9f72d91c2338a80b6083ffb4095f5afc40ef5c07c3d05603a317558d31b578a1"
+    },
+    {
+      "id": "P03",
+      "prediction": "SUFFICIENT_YES",
+      "provisional_label": "SUFFICIENT_YES",
+      "probabilities": {
+        "SUFFICIENT_NO": 0,
+        "AMBIGUOUS": 0.02,
+        "INSUFFICIENT": 0.02,
+        "SUFFICIENT_YES": 0.96
+      },
+      "elapsed_seconds": 0.47630025004036725,
+      "request_sha256": "3c74537a95afd12744de583803d8f503ca9acc85195337c2cd3b3d5b9e6200f5"
+    },
+    {
+      "id": "P04",
+      "prediction": "SUFFICIENT_NO",
+      "provisional_label": "INSUFFICIENT",
+      "probabilities": {
+        "INSUFFICIENT": 0.02,
+        "SUFFICIENT_YES": 0.03,
+        "AMBIGUOUS": 0.01,
+        "SUFFICIENT_NO": 0.94
+      },
+      "elapsed_seconds": 0.3151774579891935,
+      "request_sha256": "8e02689540d141efecff742d4fd55549d54f19e9a2dd26f7f91036b6dee85213"
+    },
+    {
+      "id": "P05",
+      "prediction": "SUFFICIENT_NO",
+      "provisional_label": "INSUFFICIENT",
+      "probabilities": {
+        "SUFFICIENT_YES": 0,
+        "INSUFFICIENT": 0.38,
+        "AMBIGUOUS": 0,
+        "SUFFICIENT_NO": 0.62
+      },
+      "elapsed_seconds": 0.2374445419991389,
+      "request_sha256": "84d390b285bace5c2ad1adefc863632d03b7e007f36dadceb674f0460cdcc5bc"
+    },
+    {
+      "id": "P06",
+      "prediction": "INSUFFICIENT",
+      "provisional_label": "INSUFFICIENT",
+      "probabilities": {
+        "SUFFICIENT_YES": 0,
+        "INSUFFICIENT": 0.99,
+        "SUFFICIENT_NO": 0.01,
+        "AMBIGUOUS": 0
+      },
+      "elapsed_seconds": 0.701480625080876,
+      "request_sha256": "01dee01c7f167c055b75effcbec259546266825c084e405adaeafe3655929286"
+    },
+    {
+      "id": "P07",
+      "prediction": "INSUFFICIENT",
+      "provisional_label": "SUFFICIENT_YES",
+      "probabilities": {
+        "SUFFICIENT_YES": 0.14,
+        "INSUFFICIENT": 0.66,
+        "AMBIGUOUS": 0,
+        "SUFFICIENT_NO": 0.2
+      },
+      "elapsed_seconds": 0.5340572920395061,
+      "request_sha256": "9b996efd99cdfebf9e1569d11d04e546d8d060d4b2a2e2d2130846834416df8b"
+    },
+    {
+      "id": "P08",
+      "prediction": "SUFFICIENT_NO",
+      "provisional_label": "INSUFFICIENT",
+      "probabilities": {
+        "SUFFICIENT_YES": 0,
+        "AMBIGUOUS": 0,
+        "INSUFFICIENT": 0.32,
+        "SUFFICIENT_NO": 0.68
+      },
+      "elapsed_seconds": 1.4555718749761581,
+      "request_sha256": "0cdc1f49a6444adafb5e00bc4d0cc62477c07ada67568f2e1573c00da5323ce2"
+    },
+    {
+      "id": "P09",
+      "prediction": "SUFFICIENT_YES",
+      "provisional_label": "SUFFICIENT_YES",
+      "probabilities": {
+        "INSUFFICIENT": 0.09,
+        "SUFFICIENT_YES": 0.86,
+        "SUFFICIENT_NO": 0.01,
+        "AMBIGUOUS": 0.04
+      },
+      "elapsed_seconds": 0.31647637498099357,
+      "request_sha256": "b9b27874f216769f00fdef47fde684eb0b7628b508b77fb11ea8dec98aaf6390"
+    },
+    {
+      "id": "P10",
+      "prediction": "SUFFICIENT_NO",
+      "provisional_label": "SUFFICIENT_NO",
+      "probabilities": {
+        "SUFFICIENT_YES": 0.03,
+        "INSUFFICIENT": 0.01,
+        "AMBIGUOUS": 0,
+        "SUFFICIENT_NO": 0.96
+      },
+      "elapsed_seconds": 0.7175772089976817,
+      "request_sha256": "38a3d9013ec51ec1f066f951bcff509935262f13b5d10c299586aab09d00822a"
+    }
+  ],
+  "agreement": 5,
+  "always_insufficient_agreement": 6,
+  "median_seconds": 0.5382370630395599,
+  "max_seconds": 1.4555718749761581,
+  "reported_cost_usd": "0",
+  "limitations": "10 correlated curated cases, 4 groups; provisional labels; no trading or forecasting claim",
+  "run_started_at_utc": "2026-09-24T06:25:57Z",
+  "prompt_version": "2d19e56",
+  "input_tokens": 7026,
+  "output_tokens": 669
+}

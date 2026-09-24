@@ -2,12 +2,14 @@
 
 A small research project testing whether Jev can interpret evidence for Polymarket contracts.
 
-**Status: a 10-case pilot dataset, offline exporter and Vercel Gateway Jev runner are available. Connectivity was attempted but blocked by Gateway account verification (credit card required). No Jev pilot results, live observation, paper PnL or real trading are available.**
+**Status: Jev has been called through Vercel Gateway on all ten pilot cases. First-run agreement with provisional labels is 5/10 (always-INSUFFICIENT baseline: 6/10). No live observation, paper PnL or real trading has been run.**
+
+See [first-run results and limitations (中文)](research/pilot-001/RESULTS.zh-CN.md).
 
 ## Current V1
 
 1. Source-check a small set of market rules and official evidence.
-2. Compare deterministic rules, Jev and a general model on evidence sufficiency (pending).
+2. Compare deterministic rules, Jev and a general model on evidence sufficiency (first Jev run complete; general-model and substantive rules comparisons pending).
 3. Only if useful, observe 3–5 active events for executable opportunities (pending).
 
 The pilot has **10 cases across 4 event groups**, not ten independent trading signals. Labels are provisional and assistant-authored. Historical memory, researcher paraphrasing and hindsight can bias results. This is not a forecasting benchmark or evidence of profitability.
