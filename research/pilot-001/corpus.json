@@ -1,0 +1,304 @@
+{
+  "version": "pilot-001.1",
+  "assembled_on": "2026-09-24",
+  "purpose": "closed_context_evidence_sufficiency_not_forecasting",
+  "sources": {
+    "apple17": {
+      "url": "https://www.apple.com/newsroom/2025/09/apple-debuts-iphone-17/",
+      "publisher": "Apple",
+      "published_date": "2025-09-09",
+      "quote": "with availability beginning Friday, September 19.",
+      "locator": "Pricing and Availability, preorder paragraph",
+      "facts": [
+        "Apple announced iPhone 17 on September 9, 2025.",
+        "Preorders in the United States and other listed regions start September 12, 2025; availability starts September 19, 2025."
+      ],
+      "verified_on": "2026-09-24",
+      "published_at_exact": null,
+      "verification": "official_page_read_via_web_tool",
+      "historical_version_verified": false
+    },
+    "apple17e": {
+      "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-iphone-17e/",
+      "publisher": "Apple",
+      "published_date": "2026-03-02",
+      "quote": "Apple today announced iPhone 17e",
+      "locator": "Dated press release, opening and availability paragraphs",
+      "facts": [
+        "Apple announced iPhone 17e on March 2, 2026.",
+        "Preorders start March 4, 2026, and availability starts March 11, 2026."
+      ],
+      "verified_on": "2026-09-24",
+      "published_at_exact": null,
+      "verification": "official_page_read_via_web_tool",
+      "historical_version_verified": false
+    },
+    "gta_may": {
+      "url": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reiterates-expectations",
+      "publisher": "Take-Two Interactive",
+      "published_date": "2025-05-02",
+      "quote": "is now planned for release on May 26, 2026",
+      "locator": "Opening paragraph",
+      "facts": [
+        "Take-Two says GTA VI was expected in fall 2025 and is now planned for May 26, 2026."
+      ],
+      "verified_on": "2026-09-24",
+      "published_at_exact": null,
+      "verification": "official_page_read_via_web_tool",
+      "historical_version_verified": false
+    },
+    "gta_nov": {
+      "url": "https://ir.take2games.com/node/31811/pdf",
+      "publisher": "Take-Two Interactive",
+      "published_date": "2025-11-06",
+      "quote": "Grand Theft Auto VI now launching November 19, 2026",
+      "locator": "Page 1, headline and dated release",
+      "facts": [
+        "Take-Two announced on November 6, 2025 that GTA VI would launch on November 19, 2026."
+      ],
+      "verified_on": "2026-09-24",
+      "published_at_exact": null,
+      "verification": "official_page_read_via_web_tool",
+      "historical_version_verified": false
+    },
+    "pope": {
+      "url": "https://www.vaticannews.va/en/pope/news/2025-05/habemus-papam.html",
+      "publisher": "Vatican News",
+      "published_date": "2025-05-08",
+      "quote": "Habemus Papam: Leo XIV, PREVOST Card. Robert Francis, O.S.A.",
+      "locator": "Named announcement beneath white-smoke introduction",
+      "facts": [
+        "The official Vatican news item names the new pope Leo XIV and identifies him as Robert Francis Prevost."
+      ],
+      "verified_on": "2026-09-24",
+      "published_at_exact": null,
+      "verification": "official_page_read_via_web_tool",
+      "historical_version_verified": false
+    }
+  },
+  "markets": {
+    "iphone17_sep9": {
+      "url": "https://polymarket.com/event/will-apple-release-iphone-17-by-september-9/will-apple-release-iphone-17-by-september-9",
+      "title": "Will Apple release iPhone 17 by September 9?",
+      "option": "YES",
+      "deadline": "2025-09-09T23:59:00-04:00",
+      "rule": "YES requires an eligible successor iPhone to be available for purchase by the general public by September 9, 2025, 11:59 PM ET. Announcement alone is insufficient. A differently numbered or named successor can qualify. Official Apple statements are the primary source; credible reporting may also be used.",
+      "rule_representation": "researcher_paraphrase_not_verbatim",
+      "rule_verified_on": "2026-09-24",
+      "historical_rule_version_verified": false,
+      "token_id": null
+    },
+    "iphone17e_mar15": {
+      "url": "https://polymarket.com/event/will-apple-announce-the-iphone-17e-by-february-28",
+      "title": "Will Apple announce the iPhone 17e by...?",
+      "option": "March 15",
+      "deadline": "2026-03-15T23:59:00-04:00",
+      "rule": "YES requires Apple to announce that it has or will release a product explicitly named iPhone 17e by March 15, 2026, 11:59 PM ET. Announcement qualifies regardless of when purchase becomes possible. Other iPhone 17 names do not qualify. Official Apple statements are the primary source.",
+      "rule_representation": "researcher_paraphrase_not_verbatim",
+      "rule_verified_on": "2026-09-24",
+      "historical_rule_version_verified": false,
+      "token_id": null
+    },
+    "iphone17e_feb28": {
+      "url": "https://polymarket.com/event/will-apple-announce-the-iphone-17e-by-february-28",
+      "title": "Will Apple announce the iPhone 17e by...?",
+      "option": "February 28",
+      "deadline": "2026-02-28T23:59:00-05:00",
+      "rule": "YES requires Apple to announce that it has or will release a product explicitly named iPhone 17e by February 28, 2026, 11:59 PM ET. Announcement qualifies regardless of when purchase becomes possible. Other iPhone 17 names do not qualify. Official Apple statements are the primary source.",
+      "rule_representation": "researcher_paraphrase_not_verbatim",
+      "rule_verified_on": "2026-09-24",
+      "historical_rule_version_verified": false,
+      "token_id": null
+    },
+    "gta_2025": {
+      "url": "https://polymarket.com/event/gta-vi-released-in-2025",
+      "title": "GTA VI released in 2025?",
+      "option": "YES",
+      "deadline": "2025-12-31T23:59:00-05:00",
+      "rule": "YES requires an official GTA VI release for public purchase or download in the US by December 31, 2025, 11:59 PM ET. Early access, beta access and leaks do not qualify; a release limited to particular consoles can qualify. Official Rockstar or Take-Two information is the source.",
+      "rule_representation": "researcher_paraphrase_not_verbatim",
+      "rule_verified_on": "2026-09-24",
+      "historical_rule_version_verified": false,
+      "token_id": null
+    },
+    "gta_june": {
+      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026",
+      "title": "GTA VI released before June 2026?",
+      "option": "YES",
+      "deadline": "2026-05-31T23:59:00-04:00",
+      "rule": "YES requires an official GTA VI release for public purchase or download in the US by May 31, 2026, 11:59 PM ET. Early access, beta access and leaks do not qualify; a release limited to particular consoles can qualify. Official Rockstar or Take-Two information is the source.",
+      "rule_representation": "researcher_paraphrase_not_verbatim",
+      "rule_verified_on": "2026-09-24",
+      "historical_rule_version_verified": false,
+      "token_id": null
+    },
+    "gta_postponed": {
+      "url": "https://polymarket.com/event/gta-6-launch-postponed",
+      "title": "GTA 6 launch postponed?",
+      "option": "YES",
+      "deadline": "2026-05-26T23:59:00-04:00",
+      "rule": "YES if Rockstar or Take-Two officially announces by May 26, 2026, 11:59 PM ET that GTA VI will not be released by May 26, 2026. Actual failure to release in the US by that deadline also qualifies. Public purchase/download is release; beta, early access and leaks are excluded.",
+      "rule_representation": "researcher_paraphrase_not_verbatim",
+      "rule_verified_on": "2026-09-24",
+      "historical_rule_version_verified": false,
+      "token_id": null
+    },
+    "pope_leo": {
+      "url": "https://polymarket.com/event/what-will-be-the-next-popes-papal-name",
+      "title": "What will be the next Pope's papal name?",
+      "option": "Leo",
+      "deadline": "2025-12-31T23:59:00-05:00",
+      "rule": "Select the official papal name chosen by the next pope. Listed names must match; a compound name does not qualify for its component alone. If none is elected by December 31, 2025, 11:59 PM ET, resolve NO. Official Catholic Church announcement is the primary source. This case asks whether the listed option Leo qualifies.",
+      "rule_representation": "researcher_paraphrase_not_verbatim",
+      "rule_verified_on": "2026-09-24",
+      "historical_rule_version_verified": false,
+      "token_id": null
+    },
+    "pope_francis": {
+      "url": "https://polymarket.com/event/what-will-be-the-next-popes-papal-name",
+      "title": "What will be the next Pope's papal name?",
+      "option": "Francis",
+      "deadline": "2025-12-31T23:59:00-05:00",
+      "rule": "Select the official papal name chosen by the next pope. Listed names must match; a compound name does not qualify for its component alone. If none is elected by December 31, 2025, 11:59 PM ET, resolve NO. Official Catholic Church announcement is the primary source. This case asks whether the listed option Francis qualifies.",
+      "rule_representation": "researcher_paraphrase_not_verbatim",
+      "rule_verified_on": "2026-09-24",
+      "historical_rule_version_verified": false,
+      "token_id": null
+    }
+  },
+  "cases": [
+    {
+      "id": "P01",
+      "event_group": "iphone17",
+      "market_id": "iphone17_sep9",
+      "source_id": "apple17",
+      "evidence_fact_indices": [
+        0
+      ],
+      "case_type": "controlled_excerpt_ablation",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P02",
+      "event_group": "iphone17",
+      "market_id": "iphone17_sep9",
+      "source_id": "apple17",
+      "evidence_fact_indices": [
+        0,
+        1
+      ],
+      "case_type": "historical_document_pair",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P03",
+      "event_group": "iphone17e",
+      "market_id": "iphone17e_mar15",
+      "source_id": "apple17e",
+      "evidence_fact_indices": [
+        0,
+        1
+      ],
+      "case_type": "historical_document_pair",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P04",
+      "event_group": "iphone17e",
+      "market_id": "iphone17e_feb28",
+      "source_id": "apple17e",
+      "evidence_fact_indices": [
+        0,
+        1
+      ],
+      "case_type": "retrospective_temporal_negative_control",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P05",
+      "event_group": "gta",
+      "market_id": "gta_2025",
+      "source_id": "gta_may",
+      "evidence_fact_indices": [
+        0
+      ],
+      "case_type": "historical_document_pair",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P06",
+      "event_group": "gta",
+      "market_id": "gta_june",
+      "source_id": "gta_may",
+      "evidence_fact_indices": [
+        0
+      ],
+      "case_type": "historical_document_pair",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P07",
+      "event_group": "gta",
+      "market_id": "gta_postponed",
+      "source_id": "gta_nov",
+      "evidence_fact_indices": [
+        0
+      ],
+      "case_type": "historical_document_pair",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P08",
+      "event_group": "gta",
+      "market_id": "gta_june",
+      "source_id": "gta_nov",
+      "evidence_fact_indices": [
+        0
+      ],
+      "case_type": "historical_document_pair",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P09",
+      "event_group": "pope",
+      "market_id": "pope_leo",
+      "source_id": "pope",
+      "evidence_fact_indices": [
+        0
+      ],
+      "case_type": "historical_document_pair",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    },
+    {
+      "id": "P10",
+      "event_group": "pope",
+      "market_id": "pope_francis",
+      "source_id": "pope",
+      "evidence_fact_indices": [
+        0
+      ],
+      "case_type": "historical_document_pair",
+      "model_evidence_representation": "attributed_researcher_paraphrase",
+      "historical_first_received_at": null,
+      "historical_orderbook_available": false
+    }
+  ]
+}

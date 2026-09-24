@@ -1,5 +1,7 @@
 # Delivery plan
 
+> Superseded as immediate scope: see [current fit-check V1](V1_FIT_CHECK.zh-CN.md). This larger design is deferred; its implementation has not started.
+
 Status: all implementation milestones are pending. This repository currently contains a design package only.
 
 ## M0 — Integration and market feasibility (1–2 days)

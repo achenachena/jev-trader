@@ -1,0 +1,122 @@
+[
+  {
+    "id": "P01",
+    "title_zh": "标题说发布，不等于已可购买",
+    "provisional_label": "INSUFFICIENT",
+    "directional_hint_not_gold": "UNKNOWN",
+    "rationale_zh": "只提供宣布信息，没有销售时间；不得借助记忆补全。",
+    "caveat_zh": "标题型截断对照，不声称是当时实际收到的完整新闻。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P02",
+    "title_zh": "预售与到货都在截止日以后",
+    "provisional_label": "INSUFFICIENT",
+    "directional_hint_not_gold": "SUPPORTS_NO",
+    "rationale_zh": "公告支持不会按时出售，但同日截止尚未走完，不能把未来安排当不可更改的最终事实。",
+    "caveat_zh": "标签是保守的充分性判断；方向标签不单独计作标准答案。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P03",
+    "title_zh": "只要求宣布，不要求开始销售",
+    "provisional_label": "SUFFICIENT_YES",
+    "directional_hint_not_gold": "SUPPORTS_YES",
+    "rationale_zh": "3 月 2 日的明确产品公告在 3 月 15 日以前；无需等到 3 月 11 日可购买。",
+    "caveat_zh": "证据充分性，不代表平台当时已完成结算。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P04",
+    "title_zh": "截止之后的公告不能用于截止前交易",
+    "provisional_label": "INSUFFICIENT",
+    "directional_hint_not_gold": "UNKNOWN",
+    "rationale_zh": "3 月 2 日这一次公告不满足 2 月 28 日截止；但它单独不能证明此前绝对没有任何合格公告。",
+    "caveat_zh": "这是事后时间边界对照，明确不可用作 2 月 28 日前的信号。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P05",
+    "title_zh": "延期计划不是已发生的未发售结果",
+    "provisional_label": "INSUFFICIENT",
+    "directional_hint_not_gold": "SUPPORTS_NO",
+    "rationale_zh": "官方计划跨到 2026 年，支持 NO；但年末未到，未来计划仍可能变更。",
+    "caveat_zh": "不得把最终 NO 或未来新闻泄漏进输入。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P06",
+    "title_zh": "计划赶上截止日期，不等于已经发售",
+    "provisional_label": "INSUFFICIENT",
+    "directional_hint_not_gold": "SUPPORTS_YES",
+    "rationale_zh": "计划 2026 年 5 月 26 日发售符合预期窗口，但没有证明实际公开发售。",
+    "caveat_zh": "该市场在 5 月 2 日当日开启；未核实来源与开市的秒级先后，不作可交易样本。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P07",
+    "title_zh": "宣布延期本身就是触发条件",
+    "provisional_label": "SUFFICIENT_YES",
+    "directional_hint_not_gold": "SUPPORTS_YES",
+    "rationale_zh": "2025 年 11 月公告的新日期晚于 2026 年 5 月 26 日，满足官方宣布延期这一条路径。",
+    "caveat_zh": "与实际发售型合约不同，之后再次调整计划不抹去已经发生的公告。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P08",
+    "title_zh": "同一公告用于不同合约，结论不同",
+    "provisional_label": "INSUFFICIENT",
+    "directional_hint_not_gold": "SUPPORTS_NO",
+    "rationale_zh": "新安排在 2026 年 11 月，支持错过 5 月底，但该市场要求实际是否发售，尚不能逻辑确定最终 NO。",
+    "caveat_zh": "与 07 共用材料，是规则敏感性测试，不是独立新闻。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P09",
+    "title_zh": "教宗名与世俗姓名区分",
+    "provisional_label": "SUFFICIENT_YES",
+    "directional_hint_not_gold": "SUPPORTS_YES",
+    "rationale_zh": "官方明确采用 Leo XIV；对应列出的 Leo 名称。",
+    "caveat_zh": "简单抽取基线案例，不代表复杂预测能力。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  },
+  {
+    "id": "P10",
+    "title_zh": "Robert Francis 不等于选择 Francis 为教宗名",
+    "provisional_label": "SUFFICIENT_NO",
+    "directional_hint_not_gold": "SUPPORTS_NO",
+    "rationale_zh": "同一官方宣布已给出 Leo XIV，因此 Francis 选项不成立。",
+    "caveat_zh": "与 09 是同一事件的互补题，不能当两次独立命中。",
+    "label_author": "Codex research assistant",
+    "review_status": "source_checked_not_independently_adjudicated",
+    "trade_eligibility": "NOT_ASSESSED",
+    "model_result": null
+  }
+]
