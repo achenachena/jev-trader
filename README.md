@@ -2,15 +2,17 @@
 
 A small research project testing whether Jev can interpret evidence for Polymarket contracts.
 
-**Status: Jev has been called through Vercel Gateway on all ten pilot cases. First-run agreement with provisional labels is 5/10 (always-INSUFFICIENT baseline: 6/10). No live observation, paper PnL or real trading has been run.**
+**Status: a second 24-case comparison is complete. Jev agrees with provisional labels on 8/10 development cases, 11/12 synthetic controls and 2/2 questions from one new historical event. The conservative sufficiency gate failed; V1 remains an offline evidence-screening prototype. No live observation, paper PnL or real trading has been run.**
 
-See [first-run results and limitations (中文)](research/pilot-001/RESULTS.zh-CN.md).
+See [latest conclusions and limitations (中文)](research/pilot-002/RESULTS.zh-CN.md),
+[frozen comparison protocol](research/pilot-002/PROTOCOL.zh-CN.md), and
+[first-run results](research/pilot-001/RESULTS.zh-CN.md).
 
 ## Current V1
 
 1. Source-check a small set of market rules and official evidence.
-2. Compare deterministic rules, Jev and a general model on evidence sufficiency (first Jev run complete; general-model and substantive rules comparisons pending).
-3. Only if useful, observe 3–5 active events for executable opportunities (pending).
+2. Compare Jev, a language model and simple text rules on evidence sufficiency (completed with Ling 3.0 Flash Fin; no claim to exhaustive rules coverage).
+3. Market observation is not activated: the conservative screening gate was not met.
 
 The pilot has **10 cases across 4 event groups**, not ten independent trading signals. Labels are provisional and assistant-authored. Historical memory, researcher paraphrasing and hindsight can bias results. This is not a forecasting benchmark or evidence of profitability.
 

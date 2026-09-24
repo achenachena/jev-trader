@@ -1,0 +1,122 @@
+[
+  {
+    "id": "P01",
+    "label": "INSUFFICIENT",
+    "reason": "只提供宣布信息，没有销售时间；不得借助记忆补全。"
+  },
+  {
+    "id": "P02",
+    "label": "INSUFFICIENT",
+    "reason": "公告支持不会按时出售，但同日截止尚未走完，不能把未来安排当不可更改的最终事实。"
+  },
+  {
+    "id": "P03",
+    "label": "SUFFICIENT_YES",
+    "reason": "3 月 2 日的明确产品公告在 3 月 15 日以前；无需等到 3 月 11 日可购买。"
+  },
+  {
+    "id": "P04",
+    "label": "INSUFFICIENT",
+    "reason": "3 月 2 日这一次公告不满足 2 月 28 日截止；但它单独不能证明此前绝对没有任何合格公告。"
+  },
+  {
+    "id": "P05",
+    "label": "INSUFFICIENT",
+    "reason": "官方计划跨到 2026 年，支持 NO；但年末未到，未来计划仍可能变更。"
+  },
+  {
+    "id": "P06",
+    "label": "INSUFFICIENT",
+    "reason": "计划 2026 年 5 月 26 日发售符合预期窗口，但没有证明实际公开发售。"
+  },
+  {
+    "id": "P07",
+    "label": "SUFFICIENT_YES",
+    "reason": "2025 年 11 月公告的新日期晚于 2026 年 5 月 26 日，满足官方宣布延期这一条路径。"
+  },
+  {
+    "id": "P08",
+    "label": "INSUFFICIENT",
+    "reason": "新安排在 2026 年 11 月，支持错过 5 月底，但该市场要求实际是否发售，尚不能逻辑确定最终 NO。"
+  },
+  {
+    "id": "P09",
+    "label": "SUFFICIENT_YES",
+    "reason": "官方明确采用 Leo XIV；对应列出的 Leo 名称。"
+  },
+  {
+    "id": "P10",
+    "label": "SUFFICIENT_NO",
+    "reason": "同一官方宣布已给出 Leo XIV，因此 Francis 选项不成立。"
+  },
+  {
+    "id": "S01",
+    "label": "INSUFFICIENT",
+    "reason": "Future plan is not completed deadline outcome."
+  },
+  {
+    "id": "S02",
+    "label": "SUFFICIENT_YES",
+    "reason": "Announcement itself satisfies the condition."
+  },
+  {
+    "id": "S03",
+    "label": "SUFFICIENT_YES",
+    "reason": "Completed qualifying sale availability."
+  },
+  {
+    "id": "S04",
+    "label": "SUFFICIENT_NO",
+    "reason": "Explicit exhaustive negative after deadline."
+  },
+  {
+    "id": "S05",
+    "label": "INSUFFICIENT",
+    "reason": "A later announcement does not exclude an earlier one."
+  },
+  {
+    "id": "S06",
+    "label": "SUFFICIENT_NO",
+    "reason": "First-ever announcement explicitly excludes earlier ones."
+  },
+  {
+    "id": "S07",
+    "label": "SUFFICIENT_NO",
+    "reason": "Presenter is not winner."
+  },
+  {
+    "id": "S08",
+    "label": "SUFFICIENT_YES",
+    "reason": "Winner matches."
+  },
+  {
+    "id": "S09",
+    "label": "INSUFFICIENT",
+    "reason": "Different region; US unknown."
+  },
+  {
+    "id": "S10",
+    "label": "INSUFFICIENT",
+    "reason": "Beta does not prove public release or final NO."
+  },
+  {
+    "id": "S11",
+    "label": "AMBIGUOUS",
+    "reason": "Undefined release criterion has reasonable preorder/availability readings."
+  },
+  {
+    "id": "S12",
+    "label": "SUFFICIENT_NO",
+    "reason": "Untrusted instruction is not event evidence."
+  },
+  {
+    "id": "H01",
+    "label": "SUFFICIENT_YES",
+    "reason": "Committee decision, not dissenting preference, determines outcome."
+  },
+  {
+    "id": "H02",
+    "label": "SUFFICIENT_NO",
+    "reason": "Committee decision, not dissenting preference, determines outcome."
+  }
+]
