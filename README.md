@@ -2,7 +2,7 @@
 
 A small research project testing whether Jev can interpret evidence for Polymarket contracts.
 
-**Status: a 10-case pilot dataset and an offline validation/export utility are available. No Jev evaluation, live observation, paper PnL or real trading has been run.**
+**Status: a 10-case pilot dataset, offline exporter and Vercel Gateway Jev runner are available. Connectivity was attempted but blocked by Gateway account verification (credit card required). No Jev pilot results, live observation, paper PnL or real trading are available.**
 
 ## Current V1
 
@@ -27,6 +27,37 @@ python3 scripts/pilot_dataset.py --export reports/pilot-inputs.json
 ```
 
 The export uses an allowlist and excludes answers, rationales, market URLs and observed outcomes. It contains English researcher paraphrases; original URLs and short quotations are retained separately for auditing. It does not call a model or place orders.
+
+## Run Jev through Vercel AI Gateway
+
+Put `AI_GATEWAY_API_KEY=your-key` in the local `.env` (ignored by Git), or set
+the environment variable. The runner reads only this setting; it does not execute
+the file. Environment variables take precedence. Never publish credentials.
+
+```sh
+chmod 600 .env
+python3 scripts/evaluate_jev.py --smoke
+python3 scripts/evaluate_jev.py --run
+```
+
+Run the ten cases only after the synthetic smoke test succeeds. Gateway may
+require a valid credit card on the account even to unlock free credits. Account
+setup and billing are managed in the Vercel dashboard.
+
+The Python standard-library runner uses the official
+[evaluation HTTP API](https://vercel.com/docs/ai-gateway/modalities/evaluation)
+with `typesafe-ai/jev`. Jev selects one of four evidence-sufficiency labels;
+it does not generate a written rationale. A run makes at most ten sequential
+requests, with a 30-second timeout per request, no automatic retries and no
+fallback model. Failed runs stop immediately and preserve completed records.
+Rerunning starts a new run and may incur new charges.
+
+Timestamped `reports/jev-*/` folders (ignored by Git) retain the exact label-free
+requests, request hashes, responses, elapsed wall time, token/cost metadata and
+an agreement summary. Missing billing metadata stays unknown. Latency includes
+network connection overhead, not just model inference. Option probabilities
+are not calibrated market-outcome probabilities. Labels remain provisional;
+the always-INSUFFICIENT baseline gets 6/10, so raw agreement alone is inadequate.
 
 ## Deferred design
 
