@@ -1,20 +1,48 @@
 # Jev Trader
 
-A small research project testing whether Jev can interpret evidence for Polymarket contracts.
+A small Polymarket bot project: automatic paper entries and exits today, a separately validated real execution adapter in a future phase.
 
-**Status: a second 24-case comparison is complete. Jev agrees with provisional labels on 8/10 development cases, 11/12 synthetic controls and 2/2 questions from one new historical event. The conservative sufficiency gate failed; V1 remains an offline evidence-screening prototype. No live observation, paper PnL or real trading has been run.**
+**Status: the paper bot is implemented. Offline ledger/execution tests, synthetic round trips, live public-data checks, a Jev API smoke call and a short forward-data run passed. No live-money trading exists. No profitable strategy or 24-hour reliability claim has been established.**
 
-See [latest conclusions and limitations (中文)](research/pilot-002/RESULTS.zh-CN.md),
+Start with [current paper V1, strategy, technical design and limits (中文)](docs/PAPER_V1.zh-CN.md).
+
+The earlier reading experiments remain useful background, not a gate preventing paper research:
+[second-round conclusions](research/pilot-002/RESULTS.zh-CN.md),
 [frozen comparison protocol](research/pilot-002/PROTOCOL.zh-CN.md), and
 [first-run results](research/pilot-001/RESULTS.zh-CN.md).
 
 ## Current V1
 
-1. Source-check a small set of market rules and official evidence.
-2. Compare Jev, a language model and simple text rules on evidence sufficiency (completed with Ling 3.0 Flash Fin; no claim to exhaustive rules coverage).
-3. Market observation is not activated: the conservative screening gate was not met.
+1. Poll Apple and Take-Two official feeds against eight reviewed contracts in four risk groups.
+2. Compare separate $1,000 virtual accounts: Jev directional classification and simple text rules.
+3. Automatically simulate taker entries and exits from fresh public order books, with dynamic fees, delay, partial fills and persistent holdings.
+4. Record candidates, rejections, fees, PnL lower bounds and coverage errors. Real execution is a future phase.
 
-The pilot has **10 cases across 4 event groups**, not ten independent trading signals. Labels are provisional and assistant-authored. Historical memory, researcher paraphrasing and hindsight can bias results. This is not a forecasting benchmark or evidence of profitability.
+Python 3.10+ on macOS/Linux; standard library only. Configure `AI_GATEWAY_API_KEY` in local `.env` or the environment, then:
+
+```sh
+python3 -m jev_trader doctor
+python3 -m jev_trader run
+```
+
+The worker runs until interrupted. Read `reports/paper/latest.md` / `latest.json`, or run
+`python3 -m jev_trader report`. Data is in `data/paper.sqlite`; all are ignored by Git.
+The first feed read creates a baseline and never trades historical entries. No wallet
+or Polymarket credential is needed. Configuration changes require a new database.
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 -m jev_trader demo --output reports/my-demo
+```
+
+The demo uses synthetic prices and mocked Jev answers; its PnL is not strategy evidence.
+Current limitations include RSS summaries rather than full articles, polling rather
+than low-latency streaming, a static reviewed watchlist, and no automatic settlement
+or redemption. Closed/unpriceable positions remain visible rather than receiving
+invented payouts. Dockerfile is provided for a future always-on host; deployment
+has not been tested. A sleeping laptop does not provide continuous coverage.
+
+The original reading pilot has **10 cases across 4 event groups**, not ten independent trading signals. Labels are provisional and assistant-authored. Historical memory, researcher paraphrasing and hindsight can bias results. This is not a forecasting benchmark or evidence of profitability.
 
 ## Start here
 
@@ -65,7 +93,7 @@ the always-INSUFFICIENT baseline gets 6/10, so raw agreement alone is inadequate
 
 ## Deferred design
 
-The earlier, larger paper-trading plan is **not the current implementation scope**:
+The earlier, larger design contains unimplemented features. The current implemented scope is [PAPER_V1](docs/PAPER_V1.zh-CN.md):
 
 - [Deferred shadow-trading specification](docs/V1_SPEC.zh-CN.md)
 - [Deferred delivery milestones](docs/DELIVERY.md)

@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "mode": "paper",
+  "experiment": "official-update-direction-v1",
+  "arms": [
+    "rules",
+    "jev"
+  ],
+  "initial_cash": "1000",
+  "order_budget": "10",
+  "max_exposure": "100",
+  "max_drawdown": "50",
+  "depth_fraction": "0.5",
+  "min_entry_price": "0.05",
+  "max_entry_price": "0.95",
+  "max_spread": "0.03",
+  "max_roundtrip_fraction": "0.08",
+  "slippage_ticks": 2,
+  "execution_delay_seconds": 2,
+  "order_expiry_seconds": 60,
+  "max_book_age_seconds": 10,
+  "cooldown_seconds": 86400,
+  "max_hold_seconds": 14400,
+  "take_profit_fraction": "0.15",
+  "stop_loss_fraction": "0.10",
+  "loop_seconds": 2,
+  "book_poll_seconds": 15,
+  "source_poll_seconds": 60,
+  "metadata_poll_seconds": 60,
+  "max_evidence_age_seconds": 3600,
+  "relevance_threshold": "0.9",
+  "clarity_threshold": "0.8",
+  "direction_threshold": "0.8",
+  "model_max_daily_calls": 24,
+  "model_max_total_calls": 200,
+  "sources": [
+    {
+      "id": "apple",
+      "url": "https://www.apple.com/newsroom/rss-feed.rss",
+      "article_hosts": [
+        "www.apple.com"
+      ]
+    },
+    {
+      "id": "take2",
+      "url": "https://ir.take2games.com/rss/news-releases.xml",
+      "article_hosts": [
+        "ir.take2games.com",
+        "www.take2games.com"
+      ]
+    }
+  ],
+  "markets": [
+    {
+      "id": "4117967",
+      "source": "apple",
+      "group": "apple-foldable",
+      "keywords": [
+        "foldable",
+        "folding iphone"
+      ],
+      "yes_patterns": [
+        "(?s)foldable.{0,200}(?:available today|now available|on sale today)"
+      ],
+      "no_patterns": [
+        "(?s)foldable.{0,200}(?:delayed|postponed).{0,100}2027"
+      ],
+      "approved_signature": "1e5472e7f2266cd33fef437b601dfcc714952aef6ce064ba5432dd0ed5546c83",
+      "question": "Will Apple release a foldable iPhone by September 30?",
+      "reviewed_on": "2026-09-24"
+    },
+    {
+      "id": "4254700",
+      "source": "apple",
+      "group": "apple-foldable",
+      "keywords": [
+        "foldable",
+        "folding iphone"
+      ],
+      "yes_patterns": [
+        "(?s)foldable.{0,200}(?:available today|now available|on sale today)"
+      ],
+      "no_patterns": [
+        "(?s)foldable.{0,200}(?:delayed|postponed).{0,100}2027"
+      ],
+      "approved_signature": "5aba6b064ed289530b38c4ce617df08f9ddde0c42f7aadab88ad3d4374132765",
+      "question": "Will Apple release a foldable iPhone by October 31?",
+      "reviewed_on": "2026-09-24"
+    },
+    {
+      "id": "920401",
+      "source": "apple",
+      "group": "apple-foldable",
+      "keywords": [
+        "foldable",
+        "folding iphone"
+      ],
+      "yes_patterns": [
+        "(?s)foldable.{0,200}(?:available today|now available|on sale today)"
+      ],
+      "no_patterns": [
+        "(?s)foldable.{0,200}(?:delayed|postponed).{0,100}2027"
+      ],
+      "approved_signature": "d87debdc9c78fd741de4a98368bf106f71b234de4720100511003dfa1535a30e",
+      "question": "Will Apple release a foldable iPhone before 2027?",
+      "reviewed_on": "2026-09-24"
+    },
+    {
+      "id": "1499672",
+      "source": "apple",
+      "group": "apple-touchscreen",
+      "keywords": [
+        "touchscreen",
+        "touch.screen macbook"
+      ],
+      "yes_patterns": [
+        "(?s)touchscreen.{0,200}(?:available today|now available|on sale today)"
+      ],
+      "no_patterns": [
+        "(?s)touchscreen.{0,200}(?:delayed|postponed).{0,100}2027"
+      ],
+      "approved_signature": "1893a7bc42712000f5e69237f07d15a35b7a4e47248c07a890920d6f981fab0d",
+      "question": "Will Apple release a touchscreen MacBook in 2026?",
+      "reviewed_on": "2026-09-24"
+    },
+    {
+      "id": "921809",
+      "source": "apple",
+      "group": "apple-vision",
+      "keywords": [
+        "vision pro",
+        "vision air"
+      ],
+      "yes_patterns": [
+        "(?s)vision pro 2.{0,200}(?:available today|now available|on sale today)"
+      ],
+      "no_patterns": [
+        "(?s)vision pro 2.{0,200}(?:delayed|postponed).{0,100}2027"
+      ],
+      "approved_signature": "6c70f7dfe6b61ca3a33362243e4a711178efb939f2d0d81be1c1ff9a155e194c",
+      "question": "Apple Vision Pro 2 released before 2027?",
+      "reviewed_on": "2026-09-24"
+    },
+    {
+      "id": "2365495",
+      "source": "take2",
+      "group": "gta-release",
+      "keywords": [
+        "grand theft auto",
+        "gta vi",
+        "gta 6"
+      ],
+      "yes_patterns": [
+        "(?s)(?:grand theft auto vi|gta vi|gta 6).{0,200}(?:available today|now available|on sale today)"
+      ],
+      "no_patterns": [
+        "(?s)(?:grand theft auto vi|gta vi|gta 6).{0,200}(?:delayed|postponed).{0,100}2027"
+      ],
+      "approved_signature": "412e7f6255f8f0e2fa622b36e09f30de71093dff72c7eef5bd3ea743900ef065",
+      "question": "GTA VI released by October 31?",
+      "reviewed_on": "2026-09-24"
+    },
+    {
+      "id": "3762773",
+      "source": "take2",
+      "group": "gta-release",
+      "keywords": [
+        "grand theft auto",
+        "gta vi",
+        "gta 6"
+      ],
+      "yes_patterns": [
+        "(?s)(?:grand theft auto vi|gta vi|gta 6).{0,200}(?:available today|now available|on sale today)"
+      ],
+      "no_patterns": [
+        "(?s)(?:grand theft auto vi|gta vi|gta 6).{0,200}(?:delayed|postponed).{0,100}2027"
+      ],
+      "approved_signature": "419b7e45ebc3b5e550ae112666623ef3eef8d0ea81abac57513ff855e4490f8b",
+      "question": "GTA VI released by November 30?",
+      "reviewed_on": "2026-09-24"
+    },
+    {
+      "id": "668591",
+      "source": "take2",
+      "group": "gta-release",
+      "keywords": [
+        "grand theft auto",
+        "gta vi",
+        "gta 6"
+      ],
+      "yes_patterns": [
+        "(?s)(?:grand theft auto vi|gta vi|gta 6).{0,200}(?:delayed|postponed).{0,100}2027"
+      ],
+      "no_patterns": [],
+      "approved_signature": "3f349023bfec018ebb2fa8fb16fd6479009a058671d681076a622861e23c034d",
+      "question": "GTA 6 launch postponed again?",
+      "reviewed_on": "2026-09-24"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Jev × Polymarket：最终小型 V1 方案
 
-> Superseded as immediate scope: see [current fit-check V1](V1_FIT_CHECK.zh-CN.md). This larger design is deferred; its implementation has not started.
+> Historical larger design. Current implemented scope: [Paper V1](PAPER_V1.zh-CN.md). In particular, raw Jev probability pricing and the three-arm design below are not implemented.
 
 日期：2026-09-24。状态：设计已收敛，尚未实现、未运行模型实验、未取得盈利证据。
 
