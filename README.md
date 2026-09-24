@@ -6,6 +6,20 @@ A small Polymarket bot project: automatic paper entries and exits today, a separ
 
 Start with [current paper V1, strategy, technical design and limits (中文)](docs/PAPER_V1.zh-CN.md).
 
+A read-only **live dashboard** is available: equity, cash, positions, decisions and evidence,
+orders/fills, source health and a 24-hour equity chart. Native ledger change notifications
+feed SSE; the browser does not poll. [Dashboard and Railway deployment guide (中文)](docs/DASHBOARD_DEPLOY.zh-CN.md).
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -r requirements-dashboard.txt
+.venv/bin/python -m dashboard  # view existing worker at http://127.0.0.1:8080
+```
+
+Dashboard-only startup does not start another bot or make model calls. For a new hosted
+instance the Docker entrypoint supervises both services; it requires a dashboard password,
+HTTPS proxy and persistent volume. No cloud service has been provisioned yet.
+
 The earlier reading experiments remain useful background, not a gate preventing paper research:
 [second-round conclusions](research/pilot-002/RESULTS.zh-CN.md),
 [frozen comparison protocol](research/pilot-002/PROTOCOL.zh-CN.md), and
@@ -31,7 +45,7 @@ The first feed read creates a baseline and never trades historical entries. No w
 or Polymarket credential is needed. Configuration changes require a new database.
 
 ```sh
-python3 -m unittest discover -s tests -v
+.venv/bin/python -m unittest discover -s tests -v
 python3 -m jev_trader demo --output reports/my-demo
 ```
 

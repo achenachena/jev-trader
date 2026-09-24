@@ -1,6 +1,8 @@
 # 当前目标与 paper bot V1
 
-更新：2026-09-24。用户的最终目标是能够自动在 Polymarket 开仓、平仓的 bot；
+更新：2026-09-24。只读 SSE 实时网页已加入，见 [观察台与部署](DASHBOARD_DEPLOY.zh-CN.md)。
+
+用户的最终目标是能够自动在 Polymarket 开仓、平仓的 bot；
 当前目标是用虚拟资金在真实数据上运行同样的流程，验证策略。本文件取代
 旧的“停在离线阅读测试”决定。工程验收和盈利验证分开，离线题目分数不再
 阻止 paper 实验。最终实盘执行器尚未实现，也没有获得当前真钱交易授权。
@@ -124,12 +126,12 @@ python3 -m jev_trader demo --output reports/my-demo
 demo 完全使用合成行情和模拟 Jev 回答，测试两个账户自动开平仓。它的
 正收益仅由测试数据构造，**不是策略回测或实盘 paper 收益**。
 
-Docker 可在自行准备的常开主机上运行（此交付未启动云端服务）：
+仅运行原来的 paper worker 可使用如下命令。包含网页的推荐部署方式见 [观察台与部署](DASHBOARD_DEPLOY.zh-CN.md)。此交付未启动云端服务：
 
 ```sh
 docker build -t jev-trader .
 docker run --name jev-paper --restart unless-stopped --env-file .env \
-  -v "$PWD/data:/app/data" -v "$PWD/reports:/app/reports" jev-trader
+  -v "$PWD/data:/app/data" -v "$PWD/reports:/app/reports" jev-trader python -m jev_trader run
 ```
 
 ## 验证与后续判断
